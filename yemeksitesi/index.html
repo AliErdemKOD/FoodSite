@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <title>Yemek Sitesi</title>
+    <link rel="shortcut icon"
+        href="https://png.pngtree.com/png-vector/20240820/ourmid/pngtree-food-restaurant-logo-vector-png-image_13531729.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1 id="logo">LOGO</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#anasayfa">Ana Sayfa</a></li>
+                    <li><a href="#menu">Menü</a></li>
+                    <li><a href="#hakkimda">Hakkımızda</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </nav>
+
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-basket-shopping"></i>
+
+                <i class="fa-solid fa-moon" id="moon" onclick="karanlik()"></i>
+                <i class="fa-solid fa-sun" id="sun" onclick="aydinlik()"></i>
+
+                <button id="loginButton"><span></span>Kayıt Ol</button>
+            </div>
+        </div>
+
+        <div class="main" id="anasayfa">
+            <div class="row">
+                <h1>AFİYET OLSUN</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptatibus cum nemo alias aspernatur?
+                    Temporibus quidem reprehenderit fugit, doloribus totam voluptates perspiciatis commodi sed odit
+                    quaerat, illo nihil. Nulla iste est nihil saepe eum! Totam officiis sequi repellendus corrupti
+                    laudantium! Dolor accusantium veniam deserunt debitis, animi explicabo at hic aliquid.</p>
+
+            </div>
+
+            <div class="row">
+                <img src="https://pngimg.com/d/burger_sandwich_PNG96712.png" id="mainImg">
+            </div>
+        </div>
+
+        <div class="menu" id="menu">
+            <div class="yemek1" id="yemekCard">
+                <img src="https://listonic.com/phimageproxy/listonic/products/hamburgers.webp" alt="" class="yemekImg">
+                <hr>
+                <br>
+                <div class="bilgi">
+                    <h1>Yemek 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo libero corrupti animi iure
+                        maiores velit temporibus officiis optio recusandae?</p>
+                    <button class="sepeteEkle" onclick="sepeteEkle()">Sepete Ekle</button>
+                </div>
+            </div>
+
+            <div class="yemek2" id="yemekCard">
+                <img src="https://pizza2go.com.tr/wp-content/uploads/2022/11/pizza2go-veggie.png" alt=""
+                    class="yemekImg">
+                <hr>
+                <br>
+                <div class="bilgi">
+                    <h1>Yemek 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo libero corrupti animi iure
+                        maiores velit temporibus officiis optio recusandae?</p>
+                    <button class="sepeteEkle" onclick="sepeteEkle()">Sepete Ekle</button>
+                </div>
+            </div>
+
+            <div class="yemek3" id="yemekCard">
+                <img src="https://www.hosta.com.tr/wp-content/uploads/2022/06/ekmek-arasi-et-doner-hosta.png" alt=""
+                    class="yemekImg">
+                <hr>
+                <br>
+                <div class="bilgi">
+                    <h1>Yemek 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo libero corrupti animi iure
+                        maiores velit temporibus officiis optio recusandae?</p>
+                    <button class="sepeteEkle" onclick="sepeteEkle()">Sepete Ekle</button>
+                </div>
+            </div>
+
+
+
+            <div class="yemek4" id="yemekCard">
+                <img src="https://www.olahmacun.com.tr/upload/lahmacun3.png" alt="" class="yemekImg">
+                <hr>
+                <br>
+                <div class="bilgi">
+                    <h1>Yemek 4</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo libero corrupti animi iure
+                        maiores velit temporibus officiis optio recusandae?</p>
+                    <button class="sepeteEkle" onclick="sepeteEkle()">Sepete Ekle</button>
+                </div>
+            </div>
+
+            <div class="yemek5" id="yemekCard">
+                <img src="https://www.hosta.com.tr/wp-content/uploads/2022/06/kusbasili-pide-hosta.png" alt=""
+                    class="yemekImg">
+                <hr>
+                <br>
+                <div class="bilgi">
+                    <h1>Yemek 5</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo libero corrupti animi iure
+                        maiores velit temporibus officiis optio recusandae?</p>
+                    <button class="sepeteEkle" onclick="sepeteEkle()">Sepete Ekle</button>
+                </div>
+            </div>
+
+            <div class="yemek6" id="yemekCard">
+                <img src="https://img.pikbest.com/png-images/20250125/crispy-french-fries-in-a-bowl-for-tasty-snack_11451045.png!sw800"
+                    alt="" class="yemekImg">
+                <hr>
+                <br>
+                <div class="bilgi">
+                    <h1>Yemek 5</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo libero corrupti animi iure
+                        maiores velit temporibus officiis optio recusandae?</p>
+                    <button class="sepeteEkle" onclick="sepeteEkle()">Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hakkimda" id="hakkimda">
+            <div class="row">
+                <img src="https://png.pngtree.com/png-vector/20240820/ourmid/pngtree-food-restaurant-logo-vector-png-image_13531729.png"
+                    alt="" id="hakImg">
+            </div>
+
+            <div class="row">
+                <h1>HAKKIMIZDA</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, blanditiis nam cumque,
+                    praesentium reiciendis minima dicta possimus esse repellendus quis eum eos laboriosam consequatur
+                    aperiam voluptatum inventore et corporis? Voluptatem magni, est temporibus quam, aliquam quas
+                    molestiae obcaecati accusantium laboriosam, dolore ipsam ex tenetur vero pariatur. Eos eaque ipsa
+                    laboriosam facilis quis tempore nemo tempora, veritatis repellat officia magnam cumque placeat,
+                    ipsum ea consequatur neque autem dolor ullam tenetur impedit sed. Repudiandae pariatur unde in
+                    suscipit corrupti ut. Ipsum exercitationem harum libero doloremque nemo iusto similique ullam
+                    maiores praesentium natus debitis quasi distinctio eaque reprehenderit cum nobis, eius recusandae
+                    quos voluptate! Eaque tenetur culpa qui sit pariatur, delectus corporis veniam sunt voluptas aliquam
+                    magnam, omnis perspiciatis vel! Cupiditate itaque harum illo rem animi ducimus ipsum quibusdam.
+                    Aspernatur consequuntur, expedita vel voluptatem quisquam minima placeat quaerat rem harum? Magni
+                    officia numquam aut sed quia maiores id dolores, nesciunt possimus. Repellendus, quasi? Vitae, quis
+                    ducimus officia quos quasi eum minus deserunt excepturi est itaque quo doloribus nobis asperiores
+                    numquam enim consectetur fuga esse incidunt dolorem totam? Optio, fugiat voluptates provident
+                    expedita enim dolorem accusamus corporis quaerat id est consequuntur, ratione perferendis nisi a
+                    ullam. Repellendus minima ullam laboriosam, recusandae nesciunt fuga quidem.</p>
+            </div>
+        </div>
+
+        <div class="iletisim" id="iletisim">
+            <div class="row">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48183.15273169795!2d37.864976558120425!3d40.99358750069625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406321e8831051d5%3A0xef59fbaab5f13cdd!2zT3JkdSwgQWx0xLFub3JkdS9PcmR1!5e0!3m2!1str!2str!4v1740328725843!5m2!1str!2str"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+
+                <form action="">
+                    <h1>BİZE ULAŞIN</h1>
+                    <input type="text" placeholder="Name" id="nameInp">
+                    <input type="email" placeholder="Email" id="mailInp">
+                    <input type="phone" placeholder="Telefon Numarası" id="phoInp">
+
+                    <input type="button" value="İletişime Geçin" id="iletisimBtn">
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            ALİ ERDEM - YEMEK SİTESİ PROJESİ
+        </footer>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+
+</html>

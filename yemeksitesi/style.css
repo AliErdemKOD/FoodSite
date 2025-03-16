@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 30px 100px;
+    
+}
+
+#logo{
+    color: orange;
+    font-size:60px;
+    font-family: sans-serif;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin: 0px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+
+.icon i{
+    font-size: x-large;
+    cursor: pointer;
+    transition: 1s;
+    margin: 0px 10px;
+}
+
+.icon i:nth-child(1):hover,.icon i:nth-child(2):hover{
+    color: orange;
+}
+
+#sun{
+    display: none;
+}
+
+#loginButton{
+    margin: 0px 20px;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid orange;
+    background-color: rgb(0, 0, 0, 0);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: ease-out 0.5s; 
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#loginButton:hover{
+    box-shadow: 1px 1px 25px orange;
+}
+
+#loginButton:hover::before{
+    width: 200px;
+}
+
+#loginButton::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 50px;
+    background-color: orange;
+    transition: 1s ease-out;
+    z-index: -1;
+}
+
+
+.main{
+    display: flex;
+    align-items: center;
+    padding: 150px 100px;
+}
+
+.main .row{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .row h1{
+    font-size: 90px;
+    text-align: center;
+    font-family: "Anton";
+    letter-spacing: 3px;
+}
+
+.main .row p{
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 60px 0px;
+    font-family: "Russo One";
+    letter-spacing: 2px;
+}
+
+.main .row img{
+    width: 900px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 50px 0px 100px;
+}
+
+#yemekCard{
+    background-color: rgb(105, 24, 24);
+    margin: 0px 10px;
+    border-radius: 20px;
+    height: 500px;
+    width: 500px;
+}
+
+.bilgi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.bilgi h1{
+    color: white;
+    font-family: "Luckiest Guy";
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.bilgi p{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.sepeteEkle{
+    background-color: rgb(255, 136, 0);
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+.menu img{
+    width: 250px;
+}
+
+.hakkimda{
+    display: flex;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 50px;
+}
+
+.hakkimda .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.hakkimda .row h1{
+    font-family: "Anton";
+    letter-spacing: 2px;
+    font-size: 90px;
+}
+
+.hakkimda .row p{
+    font-family: sans-serif;
+    font-size: large;
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.hakkimda .row img{
+    width: 600px;
+}
+
+.iletisim{
+    padding: 100px ;
+}
+
+.iletisim .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#map{
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    border: none;
+}
+
+form{
+    gap: 20px;
+}
+
+form h1{
+    font-family: "Anton";
+    font-size: 50px;
+    letter-spacing: 4px;
+}
+
+
+form input{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border: 1px solid black;
+    padding: 0px 10px ;
+    display: block;
+    margin: 20px 0px;
+    border-radius: 5px;
+}
+
+#iletisimBtn{
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(75, 14, 14);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+}
+
+@media screen and (max-width:1580px){
+    .main .row img{
+        width: 600px;
+    }
+}
+
+
+@media screen and (max-width:1280px){
+    .main .row img{
+        width: 400px;
+    }
+
+    .main .row h1{
+        font-size: 60px;
+    }
+
+    .main .row p{
+        font-size: 16px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1060px){
+    #yemekCard{
+        width: 300px;
+        height: 550px;
+    }
+
+    nav ul li a{
+        font-size: 10px;
+    }
+
+    #logo{
+        font-size: x-large;
+    }
+
+    .icon i{
+        font-size: 12px;
+    }
+
+    #loginButton{
+        width: 90px;
+        height: 20px;
+        font-size: 5px;
+    }
+}
+
