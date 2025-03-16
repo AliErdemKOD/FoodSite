@@ -1,4 +1,11 @@
-# FoodSite
-This Html css js Food Frontend Web site
+#Food Site
 
-Do not share this site without my permission.
+Bu site sadece ön yuz bulunmakta ve kullanışlı bir web site 
+
+Kullanılan Teknolojiler 
+
+HTML CSS JAVASCRİPT : SAYFANIN YAPISINI OLUŞTURMAK İÇİN KULLANILDI
+FONT AWESOME : İKONLAR EKLEMEK İÇİN KULLANILDI
+GOOGLE FONTS : FONTLAR EKLEMEK İÇİN KULLANILDI
+
+EĞER SİTEYİ BEĞENDİYSEN TAKİP EDEBİLİRSİN
